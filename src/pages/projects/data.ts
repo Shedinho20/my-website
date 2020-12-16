@@ -20,7 +20,7 @@ export const data = [
     title: "ToDo App",
     url: "",
     body: "Slick mobile app that makes it quick to add tasks, organize them into lists, and add due dates",
-    tech: ["React Native", , "TypeScript", "Context API", "Firebase"],
+    tech: ["React Native",  "TypeScript", "Context API", "Firebase"],
     Img: img2,
   },
   {
