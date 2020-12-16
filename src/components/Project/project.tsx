@@ -35,7 +35,7 @@ export const Project = (data: any) => {
         onMouseEnter={() => setShowbanner(true)}
         onMouseLeave={() => setShowbanner(false)}
       >
-        <img src={Img} />
+        <img src={Img} alt="img"/>
         <AnimatePresence>
           {showbanner && (
             <motion.div className="cover" variants={menu} initial="hidden" exit="exit" animate="visible">
