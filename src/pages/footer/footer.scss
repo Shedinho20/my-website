@@ -1,0 +1,19 @@
+.footer {
+  padding: 2rem 0;
+  margin: 2rem 0 1.4rem 0;
+  background-color: #0d1117;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  flex-direction: column;
+  h4 {
+    font-size: 0.8rem;
+    margin-top: 0.5rem;
+  }
+  a {
+    text-decoration: none;
+    color: grey;
+    cursor: pointer;
+  }
+}

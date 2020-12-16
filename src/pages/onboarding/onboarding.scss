@@ -1,0 +1,40 @@
+.onboarding {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #0d1117;
+  z-index: 500;
+
+  h3 {
+    font-size: 1.7rem;
+    margin-bottom: 1.5rem;
+    letter-spacing: 0.08rem;
+    color: #f8f810;
+    font-family: "Courier Prime", monospace;
+    span {
+      font-family: "Courier Prime", monospace;
+    }
+    @include phone {
+      font-size: 1.1rem;
+    }
+  }
+  .line1 {
+    position: relative;
+    width: max-content;
+    .cover {
+      width: 100%;
+      background-color: #0d1117;
+      height: 100%;
+      position: absolute;
+      top: 0;
+    }
+  }
+}

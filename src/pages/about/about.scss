@@ -1,0 +1,22 @@
+.aboutme {
+  position: sticky;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 6rem 0 0 0;
+  user-select: none;
+  background-color: #0d1117;
+
+  p {
+    color: gray;
+    line-height: 1.8rem;
+    letter-spacing: 0.1rem;
+    font-size: 1.1rem;
+    width: 60%;
+    text-align: justify;
+    @include tablet {
+      width: 80%;
+    }
+  }
+}

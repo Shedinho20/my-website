@@ -1,0 +1,32 @@
+.Rlink {
+  color: #dddfe2;
+  text-decoration: none;
+
+  .logo {
+    z-index: 400;
+    h2 {
+      font-size: 1rem;
+      text-transform: uppercase;
+      letter-spacing: 0.1rem;
+      font-weight: 500;
+      margin-bottom: 0.1rem;
+      @include tablet {
+        font-size: 0.8rem;
+        letter-spacing: 0.08rem;
+      }
+    }
+
+    h4 {
+      font-size: 0.83rem;
+      color: rgb(128, 128, 128);
+      text-transform: uppercase;
+      letter-spacing: 0.19rem;
+      font-weight: 100;
+      margin-bottom: 0.1rem;
+      @include tablet {
+        font-size: 0.7rem;
+        letter-spacing: 0.12rem;
+      }
+    }
+  }
+}

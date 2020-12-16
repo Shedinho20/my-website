@@ -1,0 +1,27 @@
+.container {
+  width: 100%;
+  padding: 2rem 7.5%;
+  position: fixed;
+  z-index: 100;
+  transition: all 1s ease-in-out;
+  user-select: none;
+  @include tablet {
+    padding: 2rem 2.5%;
+  }
+  @include phone {
+    padding: 2rem 2%;
+  }
+  .navcontent {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    #menu {
+      font-size: 2rem;
+      cursor: pointer;
+      @include tablet {
+        font-size: 1.8rem;
+      }
+    }
+  }
+}

@@ -1,0 +1,98 @@
+@import "./variable.scss";
+@import "../components/navbar/navbar.scss";
+@import "../pages/landing/landing.scss";
+@import "../components/socialMedia/socialMedia.scss";
+@import "../pages/about/about.scss";
+@import "../components/title/title.scss";
+@import "../components/Project/Project.scss";
+@import "../pages/projects/projects.scss";
+@import "../pages/contactme/contactme.scss";
+@import "../pages/footer/footer.scss";
+@import "../components/menu/menu.scss";
+@import "../components/logo/logo.scss";
+@import "../pages/onboarding/onboarding.scss";
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Nunito", sans-serif;
+}
+
+html,
+body {
+  // height: 500vh;
+  font-size: 16px;
+  // background-color: #212327;
+  background-color: #0d1117;
+  color: #dddfe2;
+}
+
+.btn {
+  background-color: #dddfe2;
+  border: none;
+  color: #191f24;
+  font-size: 1rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0.05rem;
+  padding: 1rem 2rem;
+  border-radius: 5px;
+  cursor: pointer;
+  @include tablet {
+    padding: 0.8rem 1.7rem;
+    font-size: 0.8rem;
+  }
+  &:hover {
+    color: #dddfe2;
+    background-color: #191f24;
+    transition: all 0.2s ease-in;
+  }
+  &:focus {
+    outline: none;
+  }
+}
+
+@keyframes beat-animation {
+  0% {
+    transform: scale(1);
+  }
+  10% {
+    transform: scale(1.02);
+  }
+  20% {
+    transform: scale(1.04);
+  }
+  30% {
+    transform: scale(1.06);
+  }
+  40% {
+    transform: scale(1.08);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  60% {
+    transform: scale(1.06);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+.beat {
+  animation: beat-animation 1s infinite;
+  transform-origin: -40% 100%;
+  display: inline-block;
+}
+
+.cursor {
+  cursor: pointer;
+  height: 2.5rem;
+  width: 2.5rem;
+  position: absolute;
+  z-index: 800;
+  top: 0;
+  background-color: #e7dede2e;
+  border-radius: 100%;
+  pointer-events: none;
+}

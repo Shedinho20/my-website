@@ -1,0 +1,43 @@
+.contact {
+  width: 100%;
+  position: sticky;
+  padding: 6rem 0 10rem 0;
+  top: 0;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-color: #0d1117;
+  margin-bottom: 4rem;
+  form {
+    display: flex;
+    max-width: 500px;
+    width: 80%;
+    flex-direction: column;
+    input,
+    textarea {
+      background-color: rgba($color: #000000, $alpha: 0);
+      padding: 0.8em 0.5em;
+      width: 100%;
+      height: 50px;
+      color: grey;
+      font-size: 1.1rem;
+      font-family: "Nunito", sans-serif;
+      font-weight: 600;
+      letter-spacing: 0.1em;
+      border: none;
+      border-bottom: solid #dddfe2 2px;
+      margin-bottom: 1rem;
+      &:focus {
+        outline: none;
+      }
+      &::-webkit-input-placeholder {
+        color: grey;
+        opacity: 0.6;
+      }
+    }
+    textarea {
+      height: 100%;
+      margin-bottom: 2rem;
+    }
+  }
+}
