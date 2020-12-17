@@ -38,6 +38,7 @@ body {
   letter-spacing: 0.05rem;
   padding: 1rem 2rem;
   border-radius: 5px;
+  width: max-content;
   cursor: pointer;
   @include tablet {
     padding: 0.8rem 1.7rem;
