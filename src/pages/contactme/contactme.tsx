@@ -8,14 +8,27 @@ export const Contact = () => {
   return (
     <div className="contact" id="contactme">
       <Title title="Contact Me" />
-      <form>
-        <input type="text" placeholder="Name" name="Name" />
-        <input type="text" placeholder="Email" name="Email" />
-        <textarea name="Message" rows={5} cols={50} placeholder="Message" />
+      <form name="contact" method="POST" data-netlify="true">
+        <p>
+          <input type="text" placeholder="Name" name="name" required />
+        </p>
+        <p>
+          <input type="text" placeholder="Email" name="email" required />
+        </p>
+        <p>
+          <textarea name="message" rows={5} cols={50} placeholder="Message" required />
+        </p>
+        <p>
+          <button
+            type="submit"
+            className="btn"
+            onMouseEnter={() => setcursor(true)}
+            onMouseLeave={() => setcursor(false)}
+          >
+            Send
+          </button>
+        </p>
       </form>
-      <button className="btn" onMouseEnter={() => setcursor(true)} onMouseLeave={() => setcursor(false)}>
-        Send
-      </button>
     </div>
   );
 };
