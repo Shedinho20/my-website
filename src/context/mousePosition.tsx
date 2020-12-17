@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 
-export const mouseposition = () => {
+export const Mouseposition = () => {
   const [mousePosition, setmousePosition] = useState({ x: 0, y: 2 });
 
   useEffect(() => {

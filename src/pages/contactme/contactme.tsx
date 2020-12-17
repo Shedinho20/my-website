@@ -9,6 +9,8 @@ export const Contact = () => {
     <div className="contact" id="contactme">
       <Title title="Contact Me" />
       <form name="contact" method="POST" data-netlify="true">
+        <input type="hidden" name="form-name" value="contact" />
+
         <p>
           <input type="text" placeholder="Name" name="name" required />
         </p>
@@ -18,16 +20,15 @@ export const Contact = () => {
         <p>
           <textarea name="message" rows={5} cols={50} placeholder="Message" required />
         </p>
-        <p>
-          <button
-            type="submit"
-            className="btn"
-            onMouseEnter={() => setcursor(true)}
-            onMouseLeave={() => setcursor(false)}
-          >
-            Send
-          </button>
-        </p>
+
+        <button
+          type="submit"
+          className="btn"
+          onMouseEnter={() => setcursor(true)}
+          onMouseLeave={() => setcursor(false)}
+        >
+          Send
+        </button>
       </form>
     </div>
   );
