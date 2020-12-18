@@ -1,5 +1,5 @@
 import { useState, createContext, useEffect } from "react";
-
+import { debounce } from "lodash";
 interface Appstate {
   navisopen: boolean;
   bottom: boolean;
@@ -22,13 +22,15 @@ export const Appprovider: React.FC = ({ children }) => {
   const [navisopen, setNavisopen] = useState(false);
   const [bottom, setbottom] = useState(false);
   const [cursor, setcursor] = useState(false);
-  window.onscroll = function () {
+
+  window.onscroll = () => {
     if (window.innerHeight + window.scrollY >= document.body.offsetHeight - 100) {
       setbottom(true);
     } else {
       setbottom(false);
     }
   };
+
   const store = {
     navisopen,
     setNavisopen,
