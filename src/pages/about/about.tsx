@@ -7,8 +7,8 @@ export const About = () => {
     <div id="about" className="aboutme">
       <Title title="About me" />
       <p>
-        I will describe myself as a passionate Frontend developer who loves coding <span>❤️.</span> I have 2 years
-        experience as a freelance Frontend developer working with
+        I will describe myself as a passionate Frontend developer who loves coding. I have 2 years experience as a
+        freelance Frontend developer working with
         <span style={{ color: "#dddfe2" }}> HTML, S(CSS), Javascript, ReactJS and Redux, React Native & Firebase</span>.
         Aside from my coding, I am an enthusiastic and driven engineering graduate with a Bsc & Msc degree in mechanical
         engineering and over 5 years experience in the oil and gas industry as a well testing Data Acquisition Engineer.

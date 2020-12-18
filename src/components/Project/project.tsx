@@ -1,5 +1,7 @@
 import { useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
+import { FaGithubSquare, FaDev } from "react-icons/fa";
+import { VscLinkExternal } from "react-icons/vsc";
 
 export const menu = {
   hidden: {
@@ -26,7 +28,7 @@ export const menu = {
 };
 
 export const Project = (data: any) => {
-  const { title, url, body, tech, Img } = data.data;
+  const { title, url, tech, webUrl, web } = data.data;
   const [showbanner, setShowbanner] = useState(false);
   return (
     <motion.div className="project">
@@ -35,30 +37,31 @@ export const Project = (data: any) => {
         onMouseEnter={() => setShowbanner(true)}
         onMouseLeave={() => setShowbanner(false)}
       >
-        <img src={Img} alt="img"/>
-        <AnimatePresence>
-          {showbanner && (
-            <motion.div className="cover" variants={menu} initial="hidden" exit="exit" animate="visible">
-              {url === "" ? (
-                <a target="_blank">In Progress</a>
-              ) : (
-                <a href={url} target="_blank">
-                  Source code
-                </a>
-              )}
-              <h4>{body}</h4>
-              <div style={{ display: "flex" }}>
-                {tech.map((stack: string) => (
-                  <h5>{stack}</h5>
-                ))}
-              </div>
-            </motion.div>
-          )}
-        </AnimatePresence>
+
+        {url === "" ? (
+          <a target="_blank">
+            <FaDev className="icon" />
+          </a>
+        ) : (
+          <a href={url} target="_blank">
+            <FaGithubSquare className="icon" />
+          </a>
+        )}
+        {web && (
+          <a href={webUrl} target="_blank">
+            <VscLinkExternal className="icon icon2" />
+          </a>
+        )}
+        <h4 className="projecttitle">{title}</h4>
+        {
+          <div style={{ display: "flex" }}>
+            {tech.map((stack: string) => (
+              <h5>{stack}</h5>
+            ))}
+          </div>
+        }
+
       </motion.div>
-      <h4 className="projecttitle" onMouseEnter={() => setShowbanner(true)} onMouseLeave={() => setShowbanner(false)}>
-        {title}
-      </h4>
     </motion.div>
   );
 };

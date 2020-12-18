@@ -219,7 +219,7 @@ export const Menu = () => {
                   onMouseEnter={() => setcursor(true)}
                   onMouseLeave={() => setcursor(false)}
                 >
-                  Blog
+                  {/* Blog */}
                 </LinkR>
               </motion.li>
             </motion.ul>
