@@ -37,7 +37,6 @@ export const Project = (data: any) => {
         onMouseEnter={() => setShowbanner(true)}
         onMouseLeave={() => setShowbanner(false)}
       >
-        <AnimatePresence></AnimatePresence>
 
         {url === "" ? (
           <a target="_blank">
@@ -61,6 +60,7 @@ export const Project = (data: any) => {
             ))}
           </div>
         }
+
       </motion.div>
     </motion.div>
   );

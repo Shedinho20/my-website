@@ -23,7 +23,6 @@ export const data = [
     url: "",
     webUrl: "",
     web: false,
-    body: "Slick mobile app that makes it quick to add tasks, organize them into lists, and add due dates",
     tech: ["React Native", "Firebase"],
     Img: img2,
   },
