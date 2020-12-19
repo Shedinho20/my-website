@@ -24,6 +24,7 @@ export const Contact = () => {
         <button
           type="submit"
           className="btn"
+          style={{ marginTop: "2rem" }}
           onMouseEnter={() => setcursor(true)}
           onMouseLeave={() => setcursor(false)}
         >
