@@ -11,6 +11,8 @@
 @import "../components/menu/menu.scss";
 @import "../components/logo/logo.scss";
 @import "../pages/onboarding/onboarding.scss";
+@import "../components/themeToggle/themeToggle.scss";
+@import "./Theme.scss";
 
 * {
   box-sizing: border-box;
@@ -24,7 +26,7 @@ body {
   // height: 500vh;
   font-size: 16px;
   // background-color: #212327;
-  background-color: #0d1117;
+  // background-color: #0d1117;
   color: #dddfe2;
 }
 

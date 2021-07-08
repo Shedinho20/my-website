@@ -19,6 +19,7 @@
     #menu {
       font-size: 2rem;
       cursor: pointer;
+      color: var(--textMain-color);
       @include tablet {
         font-size: 1.8rem;
       }

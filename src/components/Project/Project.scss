@@ -80,24 +80,21 @@
     }
   }
   &:hover {
-    background-color: #4159d000;
+    background-color: var(--theme-pageBackground);
     background-image: linear-gradient(43deg, #4159d000 0%, #c850c000 46%, #ffcd7000 100%);
-    border: solid white 2px;
+    border: solid var(--textMain-color) 2px;
   }
   &:hover .projecttitle {
-    color: white;
+    color: var(--textMain-color);
   }
   &:hover h5 {
-    color: white;
+    color: var(--textSec-color);
   }
   &:hover .icon {
     top: 40px;
-    // right: 60px;
-    color: white;
+    color: var(--textMain-color);
   }
-  &:hover .icon2 {
-    // right: 110px;
-  }
+
   &:hover:before {
     content: "";
     position: absolute;
@@ -106,6 +103,6 @@
     top: 0.5rem;
     right: 0.5rem;
     z-index: -1;
-    border: solid white 2px;
+    border: solid var(--textSec-color) 2px;
   }
 }

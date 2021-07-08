@@ -9,7 +9,7 @@ export const Mouseposition = () => {
     };
     window.addEventListener("mousemove", handmove);
     return () => window.removeEventListener("mousemove", handmove);
-  }, []);
+  });
 
   return mousePosition;
 };

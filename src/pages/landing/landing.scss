@@ -4,14 +4,14 @@
   min-height: 650px;
   position: relative;
   z-index: 10;
-
   .cover {
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
-    background-image: linear-gradient(to bottom, #0d1117f5, #0d1117f5, #0d1117f7, #0d1117, #0d1117);
+    background-color: var(--theme-page-background);
+    background-image: var(--theme-page-background);
     // background-image: linear-gradient(to bottom, #212327f5, #212327f9, #212327f7, #212327f8, #212327);
     backdrop-filter: blur(10px);
   }
@@ -57,6 +57,7 @@
       font-size: 4rem;
       letter-spacing: 0.15rem;
       margin-bottom: 0.8rem;
+      color: var(--textMain-color);
       @include tablet {
         font-size: 2.7rem;
         letter-spacing: 0.12rem;
@@ -71,7 +72,7 @@
       width: 73%;
       font-size: 2.5rem;
       letter-spacing: 0.12rem;
-      color: grey;
+      color: var(--textSec-color);
       margin-bottom: 1.5rem;
       @include tablet {
         font-size: 1.5rem;

@@ -5,7 +5,7 @@ import { Logo } from "../logo/logo";
 
 export const NavBar = () => {
   const [bg, setbg] = useState(false);
-  const { setNavisopen, setcursor } = useContext(Context);
+  const { setNavisopen, setcursor, theme } = useContext(Context);
 
   useEffect(() => {
     window.addEventListener("scroll", handleScroll);
@@ -18,9 +18,13 @@ export const NavBar = () => {
       setbg(false);
     }
   };
+
+  const style = {
+    backgroundColor: theme == "dark" ? "#0d1117" : "hsl(216, 20%, 95%)",
+  };
   return (
     <div>
-      <div className="container" style={{ backgroundColor: bg ? "rgba(13, 17, 23,1)" : "rgba(0, 0, 0,0)" }}>
+      <div className={`container ${theme}`} style={bg ? style : {}}>
         <div className="navcontent">
           <Logo />
           <FaBars

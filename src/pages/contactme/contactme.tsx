@@ -3,10 +3,10 @@ import { Title } from "../../components/title/title";
 import { Context } from "../../context/store";
 
 export const Contact = () => {
-  const { setcursor } = useContext(Context);
+  const { setcursor, theme } = useContext(Context);
 
   return (
-    <div className="contact" id="contactme">
+    <div className={`contact ${theme}`} id="contactme">
       <Title title="Contact Me" />
       <form name="contact" method="POST" data-netlify="true">
         <input type="hidden" name="form-name" value="contact" />

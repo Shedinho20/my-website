@@ -1,5 +1,5 @@
 .Rlink {
-  color: #dddfe2;
+  color: var(--textMain-color);
   text-decoration: none;
 
   .logo {
@@ -18,7 +18,7 @@
 
     h4 {
       font-size: 0.83rem;
-      color: rgb(128, 128, 128);
+      color: var(--textSec-color);
       text-transform: uppercase;
       letter-spacing: 0.19rem;
       font-weight: 100;

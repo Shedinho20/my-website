@@ -1,9 +1,7 @@
 .socialmedia {
-  // z-index: 30 !important;
   bottom: 3rem;
-  margin: 0 auto;
-  padding: 0 7.5%;
-  display: flex;
+  left: 7.5%;
+  z-index: 100;
   @include tablet {
     padding: 0 2.5%;
     bottom: 1.8rem;
@@ -13,7 +11,7 @@
   }
   .icon {
     margin-right: 1rem;
-    color: white;
+    color: var(--textMain-color);
     padding: 0;
     font-size: 2.2rem;
 

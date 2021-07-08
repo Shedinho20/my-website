@@ -113,18 +113,14 @@ export const logo = {
   },
 };
 export const Menu = () => {
-  const { navisopen, setNavisopen, setcursor } = useContext(Context);
+  const { navisopen, setNavisopen, setcursor, theme } = useContext(Context);
   return (
     <>
       <AnimatePresence>
         {navisopen && (
-          <motion.div className="menu" variants={menu} initial="hidden" exit="exit" animate="visible">
-            <motion.div className="slide" style={{ zIndex: 110 }} variants={slide1}></motion.div>
-            <motion.div
-              className="slide"
-              variants={slide2}
-              style={{ backgroundColor: "#0d1117", zIndex: 120 }}
-            ></motion.div>
+          <motion.div className={`menu ${theme}`} variants={menu} initial="hidden" exit="exit" animate="visible">
+            <motion.div className="slide1" variants={slide1}></motion.div>
+            <motion.div className="slide2" variants={slide2}></motion.div>
             <motion.div variants={logo} className="logo">
               <Logo />
             </motion.div>

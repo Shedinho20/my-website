@@ -1,0 +1,27 @@
+.themeToggle {
+  z-index: 1000;
+  margin-right: 1rem;
+  color: var(--textMain-color);
+  padding: 0;
+  font-size: 2rem;
+  cursor: pointer;
+  position: fixed;
+  bottom: 3.2rem;
+  right: 7.5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &:hover {
+    color: var(--themeToggle-btn);
+    transform: scale(1.1);
+    transition: all ease 0.3s;
+  }
+
+  @include tablet {
+    padding: 0 2.5%;
+    bottom: 2rem;
+  }
+  @include phone {
+    padding: 0 2%;
+  }
+}

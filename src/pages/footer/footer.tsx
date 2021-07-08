@@ -3,9 +3,9 @@ import { Socialmedia } from "../../components/socialMedia/socialMedia";
 import { Context } from "../../context/store";
 
 export const Footer = () => {
-  const { bottom } = useContext(Context);
+  const { bottom, theme } = useContext(Context);
   return (
-    <div className="footer">
+    <div className={`footer ${theme}`}>
       {bottom ? <Socialmedia /> : null}
       <h4>
         developed by&nbsp;

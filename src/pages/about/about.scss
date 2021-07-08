@@ -4,10 +4,10 @@
   align-items: center;
   padding: 6rem 0 0 0;
   user-select: none;
-  background-color: #0d1117;
+  background-color: var(--theme-pageBackground);
   z-index: 150;
   p {
-    color: gray;
+    color: var(--textSec-color);
     line-height: 1.8rem;
     letter-spacing: 0.1rem;
     font-size: 1.1rem;

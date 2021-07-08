@@ -4,10 +4,10 @@ import { animateScroll as scroll } from "react-scroll";
 import { Context } from "../../context/store";
 
 export const Logo = () => {
-  const { setNavisopen, setcursor } = useContext(Context);
+  const { setNavisopen, setcursor, theme } = useContext(Context);
   return (
     <Link
-      className="Rlink"
+      className={`Rlink ${theme}`}
       to="/"
       onClick={() => {
         scroll.scrollToTop();
