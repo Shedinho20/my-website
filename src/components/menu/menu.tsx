@@ -55,7 +55,7 @@ export const slide1 = {
     x: "-100vw",
     transition: {
       type: "spring",
-      delay: 2.3,
+      delay: 1.5,
       mass: 0.4,
       damping: 10,
       stiffness: 80,
@@ -82,7 +82,7 @@ export const slide2 = {
     x: "-100vw",
     transition: {
       type: "spring",
-      delay: 1.9,
+      delay: 1.1,
       mass: 0.4,
       damping: 10,
       stiffness: 80,

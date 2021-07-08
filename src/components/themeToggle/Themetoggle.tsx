@@ -1,12 +1,18 @@
 import React, { useContext } from "react";
 import { Context } from "../../context/store";
 import { HiSun } from "react-icons/hi";
-import { WiMoonAltWaningGibbous3, WiMoonAltWaxingCrescent1 } from "react-icons/wi";
+import { WiMoonAltWaxingCrescent1 } from "react-icons/wi";
 const Themetoggle = () => {
-  const { setTheme, theme } = useContext(Context);
+  const { setTheme, theme, saveTheme } = useContext(Context);
 
   const toggleTheme = () => {
-    theme === "dark" ? setTheme("light") : setTheme("dark");
+    if (theme === "dark") {
+      setTheme("light");
+      saveTheme("light");
+    } else {
+      setTheme("dark");
+      saveTheme("dark");
+    }
   };
 
   return (

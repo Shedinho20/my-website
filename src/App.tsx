@@ -1,4 +1,3 @@
-import React, { useState } from "react";
 import { Route, Switch } from "react-router-dom";
 import { Cursor } from "./components/cursor/cursor";
 import Themetoggle from "./components/themeToggle/Themetoggle";
@@ -11,7 +10,7 @@ import "./styles/App.scss";
 function App() {
   return (
     <>
-      {/* <Onboarding /> */}
+      <Onboarding />
       <Cursor />
       <Switch>
         <Route path="/" component={() => <Home />} exact />
